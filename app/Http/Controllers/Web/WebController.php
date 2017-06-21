@@ -24,4 +24,12 @@ class WebController extends Controller
         return view('library');
 
     }
+
+    public function show($id){
+        $url = "api/api/v1/book/".$id;
+        $data = $this->curl($url);
+
+        return view('book', ['book'=> json_decode($data, true)]);
+
+    }
 }

@@ -18,6 +18,23 @@ $(document).ready(function(){
         });
 
     });
+
+});
+$( "#deleteBook[id]" ).click(function() {
+    alert( "Handler for .click() called." );
 });
 
+function delete_book() {
 
+    if (confirm('Jesteś pewny?')) {
+        $.ajax({
+            type: "DELETE",
+            url: apiUrl+"/"+event.srcElement.id,
+            success: function(data)
+            {
+                location.reload();
+            }
+        });
+    }
+
+}

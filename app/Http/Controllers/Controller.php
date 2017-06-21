@@ -19,7 +19,8 @@ class Controller extends BaseController
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_HTTPHEADER, [
             'Accept: application/json',
-            'Accept-Language: en-gb'
+            'Accept-Language: en-gb',
+           ' Access-Control-Allow-Origin: *'
         ]);
         $response = curl_exec($curl);
         curl_close($curl);

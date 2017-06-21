@@ -24,9 +24,8 @@
                 <td>{{ ($book['id']) }}</td>
                 <td>{{ ($book['title']) }}</td>
                 <td>{{ ($book['author']) }}</td>
-                <input type="hidden" name="id" value="{{$book['id']}}" id="id">
-                <td><button type = "button" class="btn btn-primary">Wiecej</button></td>
-                <td><button type = "button" class="btn btn-danger" id="delete" name="delete">Usuń</button></td>
+                <td><a href = "/book/{{ ($book['id']) }}" class="btn btn-primary">Wiecej</a></td>
+                <td><button type = "button" class="btn btn-danger" onClick="delete_book()" id="{{ ($book['id']) }}" name="deleteBook" value="{{ ($book['id']) }}">Usuń</button></td>
             </tr>
 
         @endforeach

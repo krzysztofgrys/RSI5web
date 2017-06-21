@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::group(['prefix' => '/', 'namespace' => 'Web'], function () {
     Route::get('/library', 'WebController@returnBooks');
     Route::get('/search', 'WebController@searchBook');
+    Route::get('/book/{id}', 'WebController@show');
 });
 
 

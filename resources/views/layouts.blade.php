@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    {{--<link rel="icon" href="../../favicon.ico">--}}
 
     <title>Jumbotron Template for Bootstrap</title>
 
     <link href="{!! URL::asset('css/bootstrap.min.css') !!}" rel="stylesheet">
 
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    {{--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">--}}
 
     <link href="{!! URL::asset('css/jumbotron.css') !!}" rel="stylesheet">
 
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    {{--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>--}}
+    {{--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>--}}
     <![endif]-->
 </head>
 
@@ -33,10 +33,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Biblioteka</a>
+            <a class="navbar-brand" href="/library">Biblioteka</a>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/library">Ksiązki</a></li>
-                <li><a href="/search">Szukaj ksiązki</a></li>
             </ul>
 
         </div>
@@ -61,8 +60,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{!! URL::asset('js/bootstrap.min.js') !!}"></script>
 <script type="text/javascript" src="{!! URL::asset('js/my.js') !!}"></script>
+
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>
